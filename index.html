@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>menue</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="menu">
-        <h1>Select your items</h1>
+      <h1>Select your items</h1>
 
-        <div>
-            <input type="checkbox" id="burger" value="burger" >
-            <label for="burger">Burger</label>
-         </div>
-        <div>
-            <input type="checkbox" id="pizza" value="pizza"> 
-            <label for="pizza">Pizza</label>
-        </div>
-        <div>
-            <input type="checkbox" id="fries" value="fries">
-            <label for="fries">Fries</label>
-        </div>
-        <div>
-            <input type="checkbox" id="mocktail" value="mocktail">
-            <label for="mocktail">Mocktail</label>
-        </div>
-        
-        <button>Order Now</button>
+      <div>
+        <input type="checkbox" id="burger" value="burger" />
+        <label for="burger">Burger</label>
+      </div>
+      <div>
+        <input type="checkbox" id="pizza" value="pizza" />
+        <label for="pizza">Pizza</label>
+      </div>
+      <div>
+        <input type="checkbox" id="fries" value="fries" />
+        <label for="fries">Fries</label>
+      </div>
+      <div>
+        <input type="checkbox" id="mocktail" value="mocktail" />
+        <label for="mocktail">Mocktail</label>
+      </div>
+
+      <button>Order Now</button>
     </div>
-    
+<!-- container to show ordered items -->
+    <div class="food-container"></div>
+
+    <!-- sounds -->
     <audio src="./assets/ordered.mp3" id="ordered"></audio>
     <audio src="./assets/item_delivered.mp3" id="delivered"></audio>
 
-    <div class="food-container">
-    </div>
 
-   
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -43,13 +43,27 @@ function checkOrder() {
       const itemDiv = document.createElement("div");
       itemDiv.classList.add("item-div");
       const image = document.createElement("img");
+      image.src = imageBasePath + item.value + ".jpg";
+
       const orderId = document.createElement("p");
       orderId.classList.add("order-id");
-
-      image.src = imageBasePath + item.value + ".jpg";
       orderId.innerText = "Order Id : " + result.orderId;
 
-      itemDiv.append(image, orderId);
+      const feedback = document.createElement("form");
+      const textArea = document.createElement("textarea");
+      textArea.placeholder =  "Enter your feedback here!"
+      feedback.append(textArea)
+
+      const detailDiv = document.createElement("div");
+      detailDiv.append(orderId, feedback)
+      detailDiv.classList.add("detail-div")
+
+
+      
+      
+
+
+      itemDiv.append(image, detailDiv);
       foodContainer.append(itemDiv);
 // play delivered sound
       deliveredSound.currentTime = 0;
