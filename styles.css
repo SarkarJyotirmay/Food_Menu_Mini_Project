@@ -46,8 +46,8 @@ button:hover{
 }
 
 img{
-    height: 200px;
-    width: 200px;
+    /* height: 200px; */
+    width: 35%;
 }
 textarea{
     width: 100%;
@@ -60,7 +60,7 @@ textarea{
     width: 470px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     /* border: 1px solid red; */
 }
@@ -78,8 +78,9 @@ textarea{
     color: orangered;
 }
 
-@media screen and (max-width:505px) {
+@media screen and (max-width:570px) {
     .item-div{
+        width: 95%;
         flex-direction: column;
     }
 

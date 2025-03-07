@@ -42,6 +42,7 @@ function checkOrder() {
       // create and append order div from resolved object
       const itemDiv = document.createElement("div");
       itemDiv.classList.add("item-div");
+
       const image = document.createElement("img");
       image.src = imageBasePath + item.value + ".jpg";
 
