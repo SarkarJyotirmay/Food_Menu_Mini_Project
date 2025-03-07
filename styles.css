@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 0.5rem;
+    background-color: burlywood;
+    width: 500px;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+}
+.menu h1{
+    text-align: center;
+}
+
+
+button{
+    height: 2rem;
+    background-color: lightblue;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+button:hover{
+    background-color: #3fe5b3;
+}
+
+.food-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #ada2a2;
+    width: 500px;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.item-div{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.order-id{
+    font-size: 1.5rem;
+    color: orangered;
+}
