@@ -78,7 +78,7 @@ textarea{
     color: orangered;
 }
 
-@media screen and(max-width:505px) {
+@media screen and (max-width:505px) {
     .item-div{
         flex-direction: column;
     }
